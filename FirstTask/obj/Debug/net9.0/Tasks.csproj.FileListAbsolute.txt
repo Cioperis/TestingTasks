@@ -1,0 +1,5 @@
+C:\Users\lukas\Documents\GitHub\FirstTask\FirstTask\obj\Debug\net9.0\Tasks.csproj.AssemblyReference.cache
+C:\Users\lukas\Documents\GitHub\FirstTask\FirstTask\obj\Debug\net9.0\Tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lukas\Documents\GitHub\FirstTask\FirstTask\obj\Debug\net9.0\Tasks.AssemblyInfoInputs.cache
+C:\Users\lukas\Documents\GitHub\FirstTask\FirstTask\obj\Debug\net9.0\Tasks.AssemblyInfo.cs
+C:\Users\lukas\Documents\GitHub\FirstTask\FirstTask\obj\Debug\net9.0\Tasks.csproj.CoreCompileInputs.cache

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "TIAQDdfINRM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lukas\\Documents\\GitHub\\FirstTask\\FirstTask\\FirstTask.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lukas\\.nuget\\packages\\selenium.support\\4.28.0\\selenium.support.4.28.0.nupkg.sha512",
+    "C:\\Users\\lukas\\.nuget\\packages\\selenium.webdriver\\4.28.0\\selenium.webdriver.4.28.0.nupkg.sha512",
+    "C:\\Users\\lukas\\.nuget\\packages\\selenium.webdriver.chromedriver\\133.0.6943.5300\\selenium.webdriver.chromedriver.133.0.6943.5300.nupkg.sha512",
+    "C:\\Users\\lukas\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.102\\microsoft.net.sdk.compilers.toolset.9.0.102.nupkg.sha512"
+  ],
+  "logs": []
+}
