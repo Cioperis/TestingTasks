@@ -7,7 +7,6 @@ internal class Program
 {
     static void Main()
     {
-        // Initialize Chrome WebDriver
         IWebDriver driver = new ChromeDriver();
 
         try
@@ -105,7 +104,6 @@ internal class Program
         }
         finally
         {
-            // Close the browser
             driver.Quit();
         }
     }

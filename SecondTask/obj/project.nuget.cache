@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W7bNCpDZjFA=",
+  "dgSpecHash": "HMBT3XCxf54=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lukas\\Documents\\GitHub\\FirstTask\\SecondTask\\SecondTask.csproj",
+  "projectFilePath": "C:\\Users\\lukas\\Documents\\GitHub\\TestingTasks\\SecondTask\\SecondTask.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lukas\\.nuget\\packages\\selenium.support\\4.28.0\\selenium.support.4.28.0.nupkg.sha512",
     "C:\\Users\\lukas\\.nuget\\packages\\selenium.webdriver\\4.28.0\\selenium.webdriver.4.28.0.nupkg.sha512",
