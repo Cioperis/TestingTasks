@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lukas\\Documents\\GitHub\\TestingTasks\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{92C1D062-6632-41E4-A976-16F9B06011DE}|Solution Items{92C1D062-6632-41E4-A976-16F9B06011DE}|C:\\Users\\lukas\\Documents\\GitHub\\TestingTasks\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{92C1D062-6632-41E4-A976-16F9B06011DE}|Solution Items{92C1D062-6632-41E4-A976-16F9B06011DE}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{96DD4BBF-4774-4EC0-BF17-502C7954B824}|FirstTask\\FirstTask.csproj|c:\\users\\lukas\\documents\\github\\testingtasks\\firsttask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96DD4BBF-4774-4EC0-BF17-502C7954B824}|FirstTask\\FirstTask.csproj|solutionrelative:firsttask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\lukas\\Documents\\GitHub\\TestingTasks\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\lukas\\Documents\\GitHub\\TestingTasks\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-04T18:05:21.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SecondTask.csproj",
               "DocumentMoniker": "C:\\Users\\lukas\\Documents\\GitHub\\TestingTasks\\SecondTask\\SecondTask.csproj",
               "RelativeDocumentMoniker": "SecondTask\\SecondTask.csproj",
@@ -38,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lukas\\Documents\\GitHub\\TestingTasks\\SecondTask\\Program.cs",
               "RelativeDocumentMoniker": "SecondTask\\Program.cs",
@@ -46,18 +63,17 @@
               "RelativeToolTip": "SecondTask\\Program.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwCQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T12:07:59.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T12:07:59.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lukas\\Documents\\GitHub\\TestingTasks\\FirstTask\\Program.cs",
               "RelativeDocumentMoniker": "FirstTask\\Program.cs",
               "ToolTip": "C:\\Users\\lukas\\Documents\\GitHub\\TestingTasks\\FirstTask\\Program.cs",
               "RelativeToolTip": "FirstTask\\Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAgwFcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T14:33:25.832Z",
               "EditorCaption": ""
