@@ -17,7 +17,9 @@ namespace ThirdFourthTask
         [OneTimeSetUp]
         public void OneTimeSetUp()
         {
-            IWebDriver userDriver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.AddArguments("--headless");
+            IWebDriver userDriver = new ChromeDriver(options);
             WebDriverWait userWait = new WebDriverWait(userDriver, TimeSpan.FromSeconds(10));
 
             userDriver.Navigate().GoToUrl("https://demowebshop.tricentis.com/");
@@ -115,7 +117,7 @@ namespace ThirdFourthTask
                 var element = d.FindElement(By.XPath("//span[@id='payment-method-please-wait']"));
                 return !element.Displayed ? d.FindElement(By.XPath("//input[@onclick='PaymentInfo.save()']")) : null;
             }).Click();
-
+            
             wait.Until(d =>
             {
                 var element = d.FindElement(By.XPath("//span[@id='payment-info-please-wait']"));
