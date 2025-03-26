@@ -10,8 +10,7 @@ namespace FourthTask
         private IWebDriver driver;
         private WebDriverWait wait;
         private readonly string email = "test22aaa@email.com";
-        private readonly string uniqueEmail1 = $"john.doe{Guid.NewGuid()}@kick.com";
-        private readonly string uniqueEmail2 = $"john.doe{Guid.NewGuid()}@kick.com";
+        private readonly string uniqueEmail = $"john.doe{Guid.NewGuid()}@kick.com";
         private readonly string password = "test22";
         private readonly string reviewTitle = "YOoooooooo!";
         private readonly string reviewText = "This is a crazy deal!!!";
@@ -47,6 +46,20 @@ namespace FourthTask
             driver.FindElement(By.XPath("//textarea[@id='AddProductReview_ReviewText']")).SendKeys(reviewText);
 
             driver.FindElement(By.XPath("//input[@value='Submit review']")).Click();
+
+            TearDown();
+
+            SetUp();
+
+            RegisterUser("John", "Doe", uniqueEmail, password);
+
+            driver.FindElement(By.XPath("//a[@href='/apparel-shoes']")).Click();
+
+            driver.FindElement(By.XPath("//a[@href='/green-and-blue-sneaker']")).Click();
+
+            driver.FindElement(By.XPath("//a[@href='/productreviews/68']")).Click();
+
+            driver.FindElement(By.XPath($"//div[@class='product-review-list']//div[@class='product-review-item']//div[@class='review-text'][contains(text(), '{reviewText}')]/following-sibling::div[@class='product-review-helpfulness']//span[starts-with(@id, 'vote-yes-')]")).Click();
         }
 
         public void UserCreation()
@@ -58,34 +71,6 @@ namespace FourthTask
             driver.FindElement(By.XPath("//input[@value='Register']")).Click();
 
             RegisterUser("John", "Doe", email, password);
-        }
-
-        [Test]
-        public void VerifyCounterChange()
-        {
-            RegisterUser("John", "Doe", uniqueEmail1, password);
-
-            driver.FindElement(By.XPath("//a[@href='/apparel-shoes']")).Click();
-
-            driver.FindElement(By.XPath("//a[@href='/green-and-blue-sneaker']")).Click();
-
-            driver.FindElement(By.XPath("//a[@href='/productreviews/68']")).Click();
-
-            driver.FindElement(By.XPath($"//div[@class='product-review-list']//div[@class='product-review-item']//div[@class='review-text'][contains(text(), '{reviewText}')]/following-sibling::div[@class='product-review-helpfulness']//span[starts-with(@id, 'vote-yes-')]")).Click();
-        }
-
-        [Test]
-        public void VerifyCounterChangeAgain()
-        {
-            RegisterUser("John", "Doe", uniqueEmail2, password);
-
-            driver.FindElement(By.XPath("//a[@href='/apparel-shoes']")).Click();
-
-            driver.FindElement(By.XPath("//a[@href='/green-and-blue-sneaker']")).Click();
-
-            driver.FindElement(By.XPath("//a[@href='/productreviews/68']")).Click();
-
-            driver.FindElement(By.XPath($"//div[@class='product-review-list']//div[@class='product-review-item']//div[@class='review-text'][contains(text(), '{reviewText}')]/following-sibling::div[@class='product-review-helpfulness']//span[starts-with(@id, 'vote-yes-')]")).Click();
         }
 
         private void LogIn(string email, string password)
