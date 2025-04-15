@@ -36,29 +36,19 @@ namespace FourthTask
             LogIn(email, password);
 
             driver.FindElement(By.XPath("//a[@href='/apparel-shoes']")).Click();
-
             driver.FindElement(By.XPath("//a[@href='/green-and-blue-sneaker']")).Click();
-
             driver.FindElement(By.XPath("//a[@href='/productreviews/68']")).Click();
-
             driver.FindElement(By.XPath("//input[@id='AddProductReview_Title']")).SendKeys(reviewTitle);
-
             driver.FindElement(By.XPath("//textarea[@id='AddProductReview_ReviewText']")).SendKeys(reviewText);
-
             driver.FindElement(By.XPath("//input[@value='Submit review']")).Click();
 
             TearDown();
-
             SetUp();
-
             RegisterUser("John", "Doe", uniqueEmail, password);
 
             driver.FindElement(By.XPath("//a[@href='/apparel-shoes']")).Click();
-
             driver.FindElement(By.XPath("//a[@href='/green-and-blue-sneaker']")).Click();
-
             driver.FindElement(By.XPath("//a[@href='/productreviews/68']")).Click();
-
             driver.FindElement(By.XPath($"//div[@class='product-review-list']//div[@class='product-review-item']//div[@class='review-text'][contains(text(), '{reviewText}')]/following-sibling::div[@class='product-review-helpfulness']//span[starts-with(@id, 'vote-yes-')]")).Click();
         }
 
